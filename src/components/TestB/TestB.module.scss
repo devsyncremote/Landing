@@ -1,0 +1,250 @@
+.leftSide {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.rightSide {
+    flex: 1;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.topSection {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .leftTop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem;
+
+        .title {
+            color: #c5ff96;
+            text-align: center;
+            text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+            font-family: "Euclid Circular A";
+            font-size: 65px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 90px; /* 100% */
+            letter-spacing: -3.6px;
+            span {
+                color: #fff;
+            }
+        }
+
+        p {
+            color: #fff;
+
+            text-align: center;
+            font-family: "Euclid Circular A";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 150% */
+            letter-spacing: -0.8px;
+
+            span {
+                color: #c5ff96;
+                font-family: "Euclid Circular A";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: -0.8px;
+            }
+        }
+    }
+
+    .logo {
+        position: absolute;
+        width: 161.279px;
+        height: 37px;
+        margin-left: 2rem;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin-top: 5rem;
+        color: #0c1504;
+
+        text-align: center;
+        font-family: "Euclid Circular A";
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 55px; /* 157.143% */
+        letter-spacing: -1.4px;
+    }
+}
+
+.bottomSection {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    position: relative;
+
+    .leftBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem;
+
+        h1 {
+            color: #0c1504;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 55px; /* 157.143% */
+            letter-spacing: -1.4px;
+        }
+    }
+    .rightBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        color: #0c1504;
+
+        text-align: center;
+        font-family: "Euclid Circular A";
+        font-size: 20px;
+        font-style: normal;
+        line-height: 30px; /* 150% */
+        letter-spacing: -0.8px;
+    }
+
+    .card {
+        display: flex;
+        width: 630px;
+        padding: 45px 50px 65px 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid #c5ff96;
+        gap: 32px;
+        background: #0c1504;
+        margin-bottom: -18%;
+        position: relative;
+        transition:
+            transform 0.5s ease,
+            z-index 0s,
+            box-shadow 0.5s ease;
+
+        &:hover,
+        &:active,
+        &:focus {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .rounded {
+            width: 30px;
+            height: 30px;
+            background-color: #c5ff96;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+
+        .card:hover .rounded {
+            background-color: #ffffff;
+        }
+        span {
+            transition: color 0.3s ease;
+            color: #fff;
+            text-align: center;
+            font-family: "Euclid Circular A";
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 35px; /* 116.667% */
+            letter-spacing: -1.2px;
+        }
+
+        .card:hover span {
+            color: #c5ff96;
+        }
+    }
+}
+
+.leftSide,
+.rightSide {
+    flex: 1 0 auto;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.leftSide,
+.rightSide {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .topSection,
+    .bottomSection {
+        flex-direction: column;
+    }
+
+    .topSection {
+        padding: 0rem;
+        .leftTop{
+            .title{
+                text-align: left;
+            }
+        }
+    }
+
+    .bottomSection{
+        .rightSide {
+            flex-basis: 100%;
+            max-width: 100%;
+            padding: 1rem;
+
+            .card {
+                width: 100%;
+                padding: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .leftSide {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 2rem !important;
+
+        .title {
+            font-size: 40px !important;
+            line-height: 50px !important;
+            letter-spacing: -2.4px !important;
+        }
+    }
+
+    .rightSide {
+        display: none;
+    }
+    
+}

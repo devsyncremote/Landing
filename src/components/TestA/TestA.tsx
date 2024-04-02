@@ -1,0 +1,95 @@
+import React, { useState } from 'react';
+import styles from './TestA.module.scss';
+import { Layer1, Layer2, Layer3, Layer4, Logo } from '../../assets';
+import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import LineSVG from '../customSvg/line/line';
+
+
+export const TestA = () => {
+
+    const isMobile = window.innerWidth < 768;
+
+    return (
+        <div>
+            <section className="vh-100 vw-100" style={{ background: '#0C1504' }}>
+                <div className={`${styles.container} ${styles.topSection}`}>
+                    <img src={Logo} alt="logo" className={`${styles.logo} mb-5`} />
+                    <span className={`${styles.title} mt-4 mb-4`}>Get early access to our
+                        <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
+                            <span>invite-only</span>
+                            <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
+                        </div>
+                        app</span>
+                    <p className='mt-4'>
+                        Join our <span>exclusive club</span> to make meaningful connections with experts in your field, attend tailored meetups, find club workspots & explore preferred places of fellow members, and unlock member perks & rewards.
+                    </p>
+                    <p>
+                        Secure your free access now by joining our <span>waitlist.</span>
+                    </p>
+                    <p>
+                        When the app is available, you'll receive a unique link to invite up to
+                        <span> 4 like-minded individuals</span>, fostering our community's growth with top people.
+                        Choose wisely!
+                    </p>
+                    <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" />
+                </div>
+            </section>
+            <section className="vh-100 vw-100" style={{ background: '#F6F6F6' }}>
+                <div className={`${styles.bottomSection}`}>
+                    <div className={`${styles.header}`}>
+                        <h1>What is Sync Club?</h1>
+                        <p>An invite-only club for professional networking – with exclusive member rewards.</p>
+                    </div>
+                    {!isMobile && <div className='row justify-content-center mt-4'>
+                        <div className='col-3 text-center'>
+                            <img src={Layer1} alt="Description Layer1" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '4' }} />
+                            <div style={{ padding: '20px' }}>Make meaningful connections with experts in your field of interest</div>
+                        </div>
+                        <div className='col-3 text-center'>
+                            <img src={Layer2} alt="Description Layer2" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '3' }} />
+                            <div style={{ padding: '20px' }}>Find popular workspots & explore preferred places of fellow members</div>
+                        </div>
+                        <div className='col-3 text-center'>
+                            <img src={Layer3} alt="Description Layer3" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '2' }} />
+                            <div style={{ padding: '20px' }}>Enjoy exclusive interviews with top players in the industry</div>
+                        </div>
+                        <div className='col-3 text-center'>
+                            <img src={Layer4} alt="Description Layer4" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '1' }} />
+                            <div style={{ padding: '20px' }}>Access member perks & rewards!</div>
+                        </div>
+                    </div>}
+                    {isMobile &&
+                        <div>
+                            <Swiper
+                                spaceBetween={30}
+                                slidesPerView={2}
+                                centeredSlides={true}
+                            >
+                                <SwiperSlide>
+                                    <img src={Layer1} alt="Description Layer1" className={styles.swiperImage} />
+                                    <div>Make meaningful connections with experts in your field of interest</div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Layer2} alt="Description Layer2" className={styles.swiperImage} />
+                                    <div >Find popular workspots & explore preferred places of fellow members</div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Layer3} alt="Description Layer3" className={styles.swiperImage} />
+                                    <div >Enjoy exclusive interviews with top players in the industry</div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={Layer4} alt="Description Layer4" className={styles.swiperImage} />
+                                    <div>Access member perks & rewards!</div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    }
+                    <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" />
+                </div>
+            </section>
+            {/* Ajoutez plus de sections si nécessaire */}
+        </div>
+    )
+}

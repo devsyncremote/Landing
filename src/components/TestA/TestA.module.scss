@@ -1,0 +1,216 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    justify-content: center;
+}
+
+.topSection {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 15vw;
+
+    .logo {
+        width: 161.279px;
+        height: 37px;
+    }
+
+    .title {
+        color: #c5ff96;
+        text-align: center;
+        text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        font-family: "Euclid Circular A";
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90px; /* 100% */
+        letter-spacing: -3.6px;
+        span {
+            color: #fff;
+        }
+    }
+
+    p {
+        color: #fff;
+
+        text-align: center;
+        font-family: "Euclid Circular A";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+        letter-spacing: -0.8px;
+
+        span {
+            color: #c5ff96;
+            font-family: "Euclid Circular A";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            letter-spacing: -0.8px;
+        }
+    }
+}
+
+.bottomSection {
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer les éléments horizontalement */
+        justify-content: center;
+    }
+    h1 {
+        margin-top: 4rem;
+        color: #0c1504;
+
+        font-family: "Euclid Circular A";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90px; /* 128.571% */
+        letter-spacing: -2.8px;
+    }
+    p {
+        color: #0c1504;
+
+        text-align: center;
+        font-family: "Euclid Circular A";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+        letter-spacing: -0.8px;
+    }
+}
+
+//mobile view
+
+@media (max-width: 768px) {
+    .topSection {
+        padding: 0 5vw;
+
+        .logo {
+            width: 50%;
+            margin-top: 0 !important;
+        }
+
+        .title {
+            color: #c5ff96;
+            text-align: center;
+            text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+            font-family: "Euclid Circular A";
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 50px; /* 100% */
+            letter-spacing: -3.6px;
+        }
+
+        p {
+            color: #fff;
+
+            text-align: center;
+            font-family: "Euclid Circular A";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 150% */
+            letter-spacing: -0.8px;
+
+            span {
+                color: #c5ff96;
+                font-family: "Euclid Circular A";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: -0.8px;
+            }
+        }
+    }
+
+    .bottomSection {
+        .header {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centrer les éléments horizontalement */
+            justify-content: center;
+            text-align: center;
+
+            padding: 0 5vw;
+
+            h1 {
+                margin-top: 2rem;
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        :global(.swiper) {
+            // width: 600px;
+            height: 485px;
+        }
+
+        .swiperImage{
+            width: 197px;
+        }
+
+        :global(.swiper-slide) {
+            transition: opacity 0.5s ease;
+            transform: scale(0.8);
+            transition: transform 0.5s ease;
+        }
+
+        :global(.swiper-wrapper) {
+            right: 0.5rem;
+            text-align: center;
+        }
+
+        :global(.swiper-slide-active) {
+            opacity: 1;
+            transform: scale(1);
+            z-index: 1;
+            transition: all 0.5s ease;
+
+            div{
+                margin-top: 10px;
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        :global(.swiper-slide-next) {
+            opacity: 0.5;
+            transform: scale(0.9);
+            z-index: 0;
+            right: 30%;
+
+            div{
+                display: none;
+            }
+        }
+
+        :global(.swiper-slide-prev) {
+            opacity: 0.5;
+            transform: scale(0.9);
+            z-index: 0;
+            left: 30%;
+
+            div{
+                display: none;
+            }
+        }
+    }
+}
