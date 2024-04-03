@@ -23,7 +23,7 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
     const handleClose = () => setShow(false);
 
     const DEFAULT_ERROR = "An error occurred. Please try again later.";
-    // const SUCCESS_MESSAGE = "You have been added to the waitlist!";
+    const SUCCESS_MESSAGE = "You have been added to the waitlist!";
 
     const reset = () => {
         setEmail('');
@@ -39,7 +39,7 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
         if (data) {
             reset();
             if (data.status === "success") {
-                handleShow()
+                setSuccess(SUCCESS_MESSAGE);
             } else if (data.status === "fail") {
                 setError(DEFAULT_ERROR);
             }

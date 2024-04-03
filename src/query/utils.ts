@@ -1,4 +1,4 @@
-export const API_URL = process.env.REACT_APP_API;
+export const API_URL = 'https://dev.api.syncremote.co/api/v1'
 
 type HeadersInit_ = Headers | string[][] | { [key: string]: string };
 type BodyInit_ =
