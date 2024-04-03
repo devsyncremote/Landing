@@ -33,10 +33,12 @@ export const TestA = () => {
                         <span> 4 like-minded individuals</span>, fostering our community's growth with top people.
                         Choose wisely!
                     </p>
-                    <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" />
+                    <div className='w-100 d-flex justify-content-center'>
+                        <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" className={`${isMobile ? 'w-100' : 'w-50'} d-flex justify-content-center`} style={{ width: '90%', maxWidth: '90%' }} />
+                    </div>
                 </div>
             </section>
-            <section className="vh-100 vw-100" style={{ background: '#F6F6F6' }}>
+            <section className="vh-120 vw-100" style={{ background: '#F6F6F6' }}>
                 <div className={`${styles.bottomSection}`}>
                     <div className={`${styles.header}`}>
                         <h1>What is Sync Club?</h1>
@@ -44,19 +46,19 @@ export const TestA = () => {
                     </div>
                     {!isMobile && <div className='row justify-content-center mt-4'>
                         <div className='col-3 text-center'>
-                            <img src={Layer1} alt="Description Layer1" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '4' }} />
+                            <img src={Layer1} alt="Description Layer1" className="img-fluid" style={{ maxWidth: '16rem', position: 'relative', zIndex: '4' }} />
                             <div style={{ padding: '20px' }}>Make meaningful connections with experts in your field of interest</div>
                         </div>
                         <div className='col-3 text-center'>
-                            <img src={Layer2} alt="Description Layer2" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '3' }} />
+                            <img src={Layer2} alt="Description Layer2" className="img-fluid" style={{ maxWidth: '16rem', position: 'relative', zIndex: '3' }} />
                             <div style={{ padding: '20px' }}>Find popular workspots & explore preferred places of fellow members</div>
                         </div>
                         <div className='col-3 text-center'>
-                            <img src={Layer3} alt="Description Layer3" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '2' }} />
+                            <img src={Layer3} alt="Description Layer3" className="img-fluid" style={{ maxWidth: '16rem', position: 'relative', zIndex: '2' }} />
                             <div style={{ padding: '20px' }}>Enjoy exclusive interviews with top players in the industry</div>
                         </div>
                         <div className='col-3 text-center'>
-                            <img src={Layer4} alt="Description Layer4" className="img-fluid" style={{ maxWidth: '13rem', position: 'relative', zIndex: '1' }} />
+                            <img src={Layer4} alt="Description Layer4" className="img-fluid" style={{ maxWidth: '16rem', position: 'relative', zIndex: '1' }} />
                             <div style={{ padding: '20px' }}>Access member perks & rewards!</div>
                         </div>
                     </div>}
@@ -86,7 +88,9 @@ export const TestA = () => {
                             </Swiper>
                         </div>
                     }
-                    <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" />
+                    <div className='w-100 d-flex justify-content-center'>
+                        <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" className={`w-100 d-flex justify-content-center`} style={{ width: '90%', maxWidth: '90%' }} />
+                    </div>
                 </div>
             </section>
             {/* Ajoutez plus de sections si nécessaire */}

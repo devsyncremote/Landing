@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './TestB.module.scss';
-import { Layer1, Layer2, Layer3, Layer4, Layer5, Layer6, Layer7, Logo } from '../../assets';
+import { Layer5, Layer6, Layer7, Logo } from '../../assets';
 import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
 import LineSVG from '../customSvg/line/line';
 
@@ -29,6 +29,8 @@ const cardsData = [
 export const TestB = () => {
     const [activeCard, setActiveCard] = useState<number | null>(null);
 
+    const isMobile = window.innerWidth < 768;
+
     const handleCardClick = (cardId: number) => {
         setActiveCard(cardId);
     };
@@ -55,8 +57,8 @@ export const TestB = () => {
                             Sign up to get your one-time invitation and be among the first
                             to join Sync Club, a professional networking club with exclusive member rewards.
                         </p>
-                        <div className='mt-5'>
-                            <JoinWaitlistInput labelBtn="Get your invite" placeholder="Type your email" haveIcon={true} />
+                        <div className='mt-5 w-100'>
+                            <JoinWaitlistInput labelBtn="Get your invite" placeholder="Type your email" haveIcon={true} className={`justify-content-${isMobile ? 'center' : 'start'}`} style={{ width: '80%', maxWidth: '80%' }} />
                         </div>
 
                     </div>
@@ -68,7 +70,7 @@ export const TestB = () => {
 
                 </div>
             </section>
-            <section className="vh-100 vw-100" style={{ background: '#F6F6F6' }}>
+            <section className="vh-200 vw-100" style={{ background: '#F6F6F6' }}>
                 <div className={`${styles.header}`}>
                     <h1>What is
                         <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
@@ -78,34 +80,40 @@ export const TestB = () => {
                         ?</h1>
                 </div>
                 <div className={`${styles.bottomSection}`}>
-
                     <div className={`${styles.leftSide} ${styles.leftBottom}`}>
-                        <h1 className='text-start'>
-                            An invite-only club for professional networking – with exclusive member rewards.
-                        </h1>
-                        <p className='text-start'>We’re building a community based on the personal recommendations of our first members.
-                            When our app is available, you'll receive a unique link to invite up to <b>4 like-minded individuals</b>,
-                            fostering our community's growth with top-notch connections.</p>
-                        <div className=''>
-                            <JoinWaitlistInput labelBtn="Get your invite" placeholder="Type your email" haveIcon={true} />
+                        <div className={styles.containerCustom}>
+                            <h1 className='text-start'>
+                                An invite-only club for professional networking – with exclusive member rewards.
+                            </h1>
+                            <p className='text-start'>We’re building a community based on the personal recommendations of our first members.
+                                When our app is available, you'll receive a unique link to invite up to <b>4 like-minded individuals</b>,
+                                fostering our community's growth with top-notch connections.</p>
+                            <div className='w-100'>
+                                <JoinWaitlistInput labelBtn="Get your invite" placeholder="Type your email" haveIcon={true} className={`justify-content-${isMobile ? 'center' : 'start'}`} style={{ width: '90%', maxWidth: '90%' }} />
+                            </div>
                         </div>
+
                     </div>
                     <div className={`${styles.rightSide} ${styles.rightBottom}`}>
-                        {cardsData.map((card) => (
-                            <div
-                                key={card.id}
-                                className={styles.card}
-                                onClick={() => handleCardClick(card.id)}
-                                onMouseEnter={() => handleCardMouseEnter(card.id)}
-                                onMouseLeave={() => setActiveCard(null)}
-                                style={{ zIndex: activeCard === card.id ? 1000 : 1 }}
-                            >
-                                <div className={styles.rounded}>
-                                    {card.id}
+                        <div className={styles.cardContainer}>
+                            {cardsData.map((card) => (
+                                <div
+                                    key={card.id}
+                                    className={styles.card}
+                                    onClick={() => handleCardClick(card.id)}
+                                    onMouseEnter={() => handleCardMouseEnter(card.id)}
+                                    onMouseLeave={() => setActiveCard(null)}
+                                    style={{ top : `${card.id * 100}px`}}
+                                >
+                                    <div className={styles.cardContent}>
+                                        <div className={styles.rounded}>
+                                            {card.id}
+                                        </div>
+                                        <span>{card.text}</span>
+                                    </div>
                                 </div>
-                                <span>{card.text}</span>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

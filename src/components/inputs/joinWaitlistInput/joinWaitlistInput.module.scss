@@ -3,7 +3,7 @@
     max-width: 30rem;
     width: 30rem;
     padding: 20px 30px;
-    height: 94px;
+    height: 84px;
     align-items: center;
     gap: 10px;
     border-radius: 100px;
@@ -60,7 +60,7 @@
         position: absolute;
         bottom: -20px;
     }
-    
+
     .success {
         color: #c5ff96;
         font-size: 12px;
@@ -72,14 +72,14 @@
     }
 
     .button {
-        width: 13rem;
-        height: 53px;
+        width: 10rem;
+        height: 45px;
         border-radius: 100px;
         border: none;
         background-color: #000;
         cursor: pointer;
         position: absolute;
-        right: 20px;
+        right: 16px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 16px;
@@ -90,6 +90,14 @@
 
         span {
             color: #c5ff96;
+
+            text-align: center;
+            font-family: "Euclid Circular A";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; /* 150% */
+            letter-spacing: -0.8px;
         }
 
         &:focus {
@@ -125,7 +133,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: 10px;
+            left: 15px;
         }
 
         .input {
@@ -143,8 +151,11 @@
 
         .button {
             width: 8rem;
-            right: 15px;
-            font-size: 12px;
+            right: 10px;
+
+            span{
+                font-size: 14px;
+            }
         }
     }
 }
