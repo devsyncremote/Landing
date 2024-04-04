@@ -29,7 +29,7 @@ const ConfirmWaitlist = ({ show, onHide }: ConfirmWaitlistProps) => {
     return (
         <Modal show={show} onHide={onHide} centered className={styles.modal}>
             <Modal.Header className={styles.topHalf}>
-                
+
             </Modal.Header>
             <img className={styles.close} src={Close} alt="" onClick={onHide} />
             <div className={styles.iconSeparator}>
@@ -37,8 +37,9 @@ const ConfirmWaitlist = ({ show, onHide }: ConfirmWaitlistProps) => {
             </div>
             <Modal.Body className={styles.bottomHalf}>
                 <h1>Check your inbox!</h1>
-                <p>Share this with your friends and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div className={`row ${styles.socialIcons}`}>
+                <p>Sync Club is dedicated to bringing together a community of people that existing members are excited to connect with.</p>
+                <p>Share our waitlist with people who you want to see in the app when we launch!</p>
+                {/* <div className={`row ${styles.socialIcons}`}>
                     <div className={`col ${styles.icon}`}>
                         <img src={Facebook} alt="Facebook" onClick={() => shareLink('facebook')}/>
                     </div>
@@ -51,7 +52,7 @@ const ConfirmWaitlist = ({ show, onHide }: ConfirmWaitlistProps) => {
                     <div className={`col ${styles.icon}`}>
                         <img src={Share} alt="Share" onClick={() => shareLink()}/>
                     </div>
-                </div>
+                </div> */}
             </Modal.Body>
         </Modal>
     );
