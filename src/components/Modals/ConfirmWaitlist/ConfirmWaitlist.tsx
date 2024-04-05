@@ -1,30 +1,15 @@
 import { Modal } from 'react-bootstrap';
 import styles from './ConfirmWaitlist.module.scss';
-import { Close, Facebook, InBox, Instagram, LinkedIn, Share } from '../../../assets';
+import { Close, InBox } from '../../../assets';
+import { ReferralLinkInput } from '../../inputs/referralLinkInput/referralLinkInput';
 
 interface ConfirmWaitlistProps {
     show: boolean;
     onHide: () => void;
+    referralId: string | null;
 }
 
-const ConfirmWaitlist = ({ show, onHide }: ConfirmWaitlistProps) => {
-
-    const shareLink = (plateform?: string) => {
-        switch (plateform) {
-            case 'facebook':
-
-                break;
-            case 'instagram':
-
-                break;
-            case 'linkedin':
-
-                break;
-
-            default:
-                return "share classic"
-        }
-    }
+const ConfirmWaitlist = ({ show, onHide, referralId }: ConfirmWaitlistProps) => {
 
     return (
         <Modal show={show} onHide={onHide} centered className={styles.modal}>
@@ -36,23 +21,10 @@ const ConfirmWaitlist = ({ show, onHide }: ConfirmWaitlistProps) => {
                 <img src={InBox} alt="" />
             </div>
             <Modal.Body className={styles.bottomHalf}>
-                <h1>Check your inbox!</h1>
+                <h1>Invite your friends for early access!</h1>
+                <ReferralLinkInput referralId={referralId} />
                 <p>Sync Club is dedicated to bringing together a community of people that existing members are excited to connect with.</p>
                 <p>Share our waitlist with people who you want to see in the app when we launch!</p>
-                {/* <div className={`row ${styles.socialIcons}`}>
-                    <div className={`col ${styles.icon}`}>
-                        <img src={Facebook} alt="Facebook" onClick={() => shareLink('facebook')}/>
-                    </div>
-                    <div className={`col ${styles.icon}`}>
-                        <img src={Share} alt="Instagram" onClick={() => shareLink('instagram')}/>
-                    </div>
-                    <div className={`col ${styles.icon}`}>
-                        <img src={LinkedIn} alt="Linkedin" onClick={() => shareLink('linkedin')}/>
-                    </div>
-                    <div className={`col ${styles.icon}`}>
-                        <img src={Share} alt="Share" onClick={() => shareLink()}/>
-                    </div>
-                </div> */}
             </Modal.Body>
         </Modal>
     );

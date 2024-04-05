@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import styles from './TestA.module.scss';
 import { Layer1, Layer2, Layer3, Layer4, Logo } from '../../assets';
 import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
@@ -93,7 +92,6 @@ export const TestA = () => {
                     </div>
                 </div>
             </section>
-            {/* Ajoutez plus de sections si nécessaire */}
         </div>
     )
 }

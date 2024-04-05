@@ -14,7 +14,7 @@
     .iconSeparator {
         position: absolute;
         z-index: 10;
-        top: 8%;
+        top: 15%;
         left: 40%;
     }
 
@@ -31,12 +31,11 @@
     }
 
     .bottomHalf {
-        height: 80%;
         background-color: #fff;
         border-radius: 0 0 20px 20px;
         flex-grow: 1;
         z-index: 2;
-        padding: 0rem 5rem 0rem 5rem;
+        padding: 0rem 4rem 0rem 4rem;
         text-align: center;
 
         h1 {
@@ -51,10 +50,9 @@
         }
 
         p {
-            color: #0c1504;
+            color: #0C1504;
             text-align: center;
-            font-family: "Euclid Circular A";
-            font-size: 14px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 500;
             line-height: 24px; /* 171.429% */
@@ -69,7 +67,7 @@
     :global(.modal-content) {
         display: flex;
         flex-direction: column;
-        height: 480px;
+        height: 600px;
         background-color: transparent;
         border: none;
         border-radius: 0;

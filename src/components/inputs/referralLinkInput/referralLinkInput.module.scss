@@ -1,0 +1,124 @@
+.inputContainer {
+    display: flex;
+    max-width: 30rem;
+    width: 30rem;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background-color: #f2f2f2;
+    position: relative;
+    box-sizing: border-box;
+
+    .input {
+        flex-grow: 1;
+        height: 54px;
+        border-radius: 100px;
+        border: none;
+        padding: 0 20px;
+        font-size: 12px;
+        font-family: "Euclid Circular A";
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.56px;
+        color: #0C1504;
+        background-color: transparent;
+        &:focus {
+            outline: none;
+        }
+        &::placeholder {
+            color: #a8a8a8;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 214.286% */
+            letter-spacing: -0.56px;
+        }
+    }
+
+    img {
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            transform: scale(1.1);
+        }
+    }
+
+    svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .inputIcon {
+        padding: 0 0 !important;
+        height: 45px;
+        &::placeholder {
+            color: #010300;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 214.286% */
+            letter-spacing: -0.56px;
+        }
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+        font-weight: 700;
+        position: absolute;
+        bottom: -20px;
+    }
+
+    .success {
+        color: #c5ff96;
+        font-size: 12px;
+        font-weight: 700;
+        position: absolute;
+        bottom: -20px;
+    }
+
+    .button {
+        width: 10rem;
+        height: 45px;
+        border-radius: 100px;
+        border: none;
+        background-color: #000;
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 150% */
+        letter-spacing: -0.8px;
+
+        span {
+            color: #c5ff96;
+
+            text-align: center;
+            font-family: "Euclid Circular A";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; /* 150% */
+            letter-spacing: -0.8px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: #c5ff96;
+            span {
+                color: #000;
+            }
+        }
+    }
+}

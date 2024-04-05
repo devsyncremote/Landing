@@ -41,7 +41,7 @@ export const TestB = () => {
 
     return (
         <div>
-            <section className="vh-100 vw-100" style={{ background: '#0C1504' }}>
+            <section className="vh-100 vw-100" style={{ background: '#0C1504', position: 'relative', zIndex: '1' }}>
                 <div className={`${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
@@ -63,14 +63,14 @@ export const TestB = () => {
 
                     </div>
                     <div className={styles.rightSide}>
-                        <img src={Layer5} alt="" style={{ position: 'absolute', left: '3rem', top: '0', zIndex: '8' }} />
-                        <img src={Layer6} alt="" style={{ position: 'absolute', left: '12rem', bottom: '0', zIndex: '7' }} />
-                        <img src={Layer7} alt="" style={{ position: 'absolute', right: '0', top: '0', zIndex: '10' }} />
+                        <img src={Layer5} alt="" style={{ position: 'absolute', left: '2rem', top: '8rem', zIndex: '8', width: '400px' }} />
+                        <img src={Layer6} alt="" style={{ position: 'absolute', left: '12rem', bottom: '-7rem', zIndex: '7', width: '400px' }} />
+                        <img src={Layer7} alt="" style={{ position: 'absolute', right: '-5rem', top: '-3rem', zIndex: '10', width: '400px' }} />
                     </div>
 
                 </div>
             </section>
-            <section className="vh-200 vw-100" style={{ background: '#F6F6F6' }}>
+            <section className="vh-200 vw-100" style={{ background: '#F6F6F6', position: 'relative', zIndex: '2' }}>
                 <div className={`${styles.header}`}>
                     <h1>What is
                         <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
@@ -103,7 +103,7 @@ export const TestB = () => {
                                     onClick={() => handleCardClick(card.id)}
                                     onMouseEnter={() => handleCardMouseEnter(card.id)}
                                     onMouseLeave={() => setActiveCard(null)}
-                                    style={{ top : `${card.id * 100}px`}}
+                                    style={{ top: `${card.id * 100}px` }}
                                 >
                                     <div className={styles.cardContent}>
                                         <div className={styles.rounded}>

@@ -17,3 +17,4 @@ export { default as Share } from "./images/social/share.svg";
 //icons
 export { default as InBox } from "./images/inbox.svg";
 export { default as Close } from './images/close.svg'
+export { default as shareBtn } from './images/shareButton.svg'

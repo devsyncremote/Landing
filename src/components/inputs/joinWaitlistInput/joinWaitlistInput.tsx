@@ -3,6 +3,8 @@ import styles from './joinWaitlistInput.module.scss';
 import { IoIosMail } from "react-icons/io";
 import { useJoinWailist } from '../../../query';
 import ConfirmWaitlist from '../../Modals/ConfirmWaitlist/ConfirmWaitlist';
+import Cookies from 'js-cookie';
+
 
 interface InputWaitlistProps {
     labelBtn: string;
@@ -17,6 +19,7 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
     const [email, setEmail] = useState('');
     const [error, setError] = useState<string | null>(null);
     const [success, setSuccess] = useState<string | null>(null);
+    const [referralId, setReferralId] = useState<string | null>(null);
 
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
@@ -39,7 +42,9 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
         if (data) {
             reset();
             if (data.status === "success") {
+                setReferralId(data.referralId);
                 setSuccess(SUCCESS_MESSAGE);
+                handleShow();
             } else if (data.status === "fail") {
                 setError(DEFAULT_ERROR);
             }
@@ -53,7 +58,8 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
         }
 
         try {
-            await mutationWaitlist(email);
+            const referral = Cookies.get('referralId');
+            mutationWaitlist(email, haveIcon ? 'TestB' : 'TestA', referral);
             reset();
         } catch (error) {
             setError(DEFAULT_ERROR);
@@ -83,7 +89,7 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
                     {success && <div className={styles.success}>{success}</div>}
                 </div>
             </div>
-            <ConfirmWaitlist show={show}  onHide={handleClose} />
+            <ConfirmWaitlist show={show}  onHide={handleClose} referralId={referralId}/>
         </>
     );
 };
