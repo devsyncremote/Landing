@@ -59,7 +59,7 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
 
         try {
             const referral = Cookies.get('referralId');
-            mutationWaitlist(email, haveIcon ? 'TestB' : 'TestA', referral);
+            mutationWaitlist(email, haveIcon ? 'TestA' : 'TestB', referral);
             reset();
         } catch (error) {
             setError(DEFAULT_ERROR);
