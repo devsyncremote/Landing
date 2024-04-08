@@ -15,23 +15,27 @@ export const TestA = () => {
             <section className="vh-100 vw-100" style={{ background: '#0C1504' }}>
                 <div className={`${styles.container} ${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mb-5`} />
-                    <span className={`${styles.title} mt-4 mb-4`}>Get early access to our
+                    <span className={`${styles.title} mb-4`}>Get early access <br />to our
                         <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
                             <span>invite-only</span>
                             <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
                         </div>
                         app</span>
-                    <p className='mt-4'>
-                        Join our <span>exclusive club</span> to make meaningful connections with experts in your field, attend tailored meetups, find club workspots & explore preferred places of fellow members, and unlock member perks & rewards.
-                    </p>
-                    <p>
-                        Secure your free access now by joining our <span>waitlist.</span>
-                    </p>
-                    <p>
-                        When the app is available, you'll receive a unique link to invite up to
-                        <span> 4 like-minded individuals</span>, fostering our community's growth with top people.
-                        Choose wisely!
-                    </p>
+                    <div style={{padding:'0 5rem'}}>
+                        <p className='mt-4'>
+                            Join our <span>exclusive club</span> to make meaningful connections with experts in your field, attend tailored meetups, find club workspots & explore preferred places of fellow members, and unlock member perks & rewards.
+                        </p>
+                        <br />
+                        <p>
+                            Secure your free access now by joining our <span>waitlist.</span>
+                        </p>
+                        <br />
+                        <p>
+                            When the app is available, you'll receive a unique link to invite up to
+                            <span> 4 like-minded individuals</span>, fostering our community's growth with top people.
+                            Choose wisely!
+                        </p>
+                    </div>
                     <div className='w-100 d-flex justify-content-center'>
                         <JoinWaitlistInput labelBtn="Get early access" placeholder="Type your email" className={`${isMobile ? 'w-100' : 'w-50'} d-flex justify-content-center`} style={{ width: '90%', maxWidth: '90%' }} />
                     </div>
