@@ -11,7 +11,7 @@ export const TestA = () => {
     const isMobile = window.innerWidth < 768;
 
     return (
-        <div>
+        <>
             <section className="vh-100 vw-100" style={{ background: '#0C1504' }}>
                 <div className={`${styles.container} ${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mb-5`} />
@@ -37,11 +37,11 @@ export const TestA = () => {
                     </div>
                 </div>
             </section>
-            <section className="vh-120 vw-100" style={{ background: '#F6F6F6' }}>
+            <section className="vh-120 vw-100" style={{ background: '#F6F6F6', paddingBottom: '40px' }}>
                 <div className={`${styles.bottomSection}`}>
                     <div className={`${styles.header}`}>
                         <h1>What is Sync Club?</h1>
-                        <p>An invite-only club for professional networking – with exclusive member rewards.</p>
+                        <p>An invite-only club for professional networking <br />– with exclusive member rewards.</p>
                     </div>
                     {!isMobile && <div className='row justify-content-center mt-4'>
                         <div className='col-3 text-center'>
@@ -92,6 +92,6 @@ export const TestA = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 }

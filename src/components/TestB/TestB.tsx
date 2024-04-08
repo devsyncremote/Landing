@@ -63,9 +63,9 @@ export const TestB = () => {
 
                     </div>
                     <div className={styles.rightSide}>
-                        <img src={Layer5} alt="" style={{ position: 'absolute', left: '2rem', top: '8rem', zIndex: '8', width: '400px' }} />
-                        <img src={Layer6} alt="" style={{ position: 'absolute', left: '12rem', bottom: '-7rem', zIndex: '7', width: '400px' }} />
-                        <img src={Layer7} alt="" style={{ position: 'absolute', right: '-5rem', top: '-3rem', zIndex: '10', width: '400px' }} />
+                        <img src={Layer5} alt="" className={styles.layer5} />
+                        <img src={Layer6} alt="" className={styles.layer6} />
+                        <img src={Layer7} alt="" className={styles.layer7} />
                     </div>
 
                 </div>

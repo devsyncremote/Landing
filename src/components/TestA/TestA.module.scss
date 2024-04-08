@@ -12,7 +12,9 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 0 15vw;
+    max-width: 1440px;
+    margin: 0 auto; 
+    padding: 0 clamp(5vw, 15vw, 10rem);
 
     .logo {
         width: 161.279px;
@@ -58,7 +60,9 @@
 }
 
 .bottomSection {
-    padding: 0 5vw;
+    padding: 0 clamp(2vw, 5vw, 5rem);
+    max-width: 1440px;
+    margin: 0 auto; 
     .header {
         height: 100%;
         width: 100%;

@@ -16,6 +16,8 @@
     display: flex;
     height: 100%;
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto; 
 
     .leftTop {
         display: flex;
@@ -95,6 +97,8 @@
     height: 100%;
     width: 100%;
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto; 
 
     .leftBottom {
         padding: 0rem 6rem;
@@ -219,6 +223,39 @@
     flex-shrink: 0;
     box-sizing: border-box;
 }
+
+.rightSide {
+    flex: 1;
+    position: relative;
+    width: 100%;
+
+    img {
+        position: absolute;
+        transition: all 0.5s ease; 
+        max-width: 400px; 
+    }
+
+    .layer5 { left: 2rem; top: 8rem; z-index: 8; }
+    .layer6 { left: 12rem; bottom: -7rem; z-index: 7; }
+    .layer7 { right: -5rem; top: -3rem; z-index: 10; }
+
+    @media (min-width: 1440px) {
+        .layer5 {
+            top: calc(40% - 200px);
+        }
+
+        .layer6 {
+            bottom: calc(25% - 200px);
+            left: calc(50% - 200px);
+        }
+
+        .layer7 {
+            right: calc(15% - 200px);
+            top:calc(25% - 200px);
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
     .topSection,
