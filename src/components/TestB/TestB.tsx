@@ -27,6 +27,7 @@ const cardsData = [
 
 
 export const TestB = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [activeCard, setActiveCard] = useState<number | null>(null);
 
     const isMobile = window.innerWidth < 768;

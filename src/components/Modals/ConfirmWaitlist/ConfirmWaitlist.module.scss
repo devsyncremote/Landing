@@ -1,7 +1,7 @@
 .modal {
     .topHalf {
         height: 20%;
-        background-color: #0c1504;
+        background-color: black;
         border-radius: 20px 20px 0 0;
         flex-grow: 1;
         display: flex;
@@ -73,7 +73,7 @@
         border-radius: 0;
 
         :global(.modal-header) {
-            background-color: #0c1504;
+            background-color: black;
             border-bottom: none;
 
             button {
