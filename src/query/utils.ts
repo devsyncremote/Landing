@@ -1,5 +1,6 @@
 // export const API_URL = 'http://localhost:3200/api/v1'
-export const API_URL = 'https://dev.api.syncremote.co/api/v1'
+// export const API_URL = 'https://dev.api.syncremote.co/api/v1'
+export const API_URL = 'https://api.syncremote.co/api/v1'
 
 type HeadersInit_ = Headers | string[][] | { [key: string]: string };
 type BodyInit_ =
