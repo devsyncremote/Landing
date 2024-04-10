@@ -12,7 +12,7 @@ export const TestA = () => {
 
     return (
         <>
-            <section className="vh-100 vw-100" style={{ background: '#0C1504' }}>
+            <section className={`${isMobile ? '' : 'vh-100'} vw-100`} style={{ background: '#0C1504', paddingBottom: isMobile ? '2rem' : '' }}>
                 <div className={`${styles.container} ${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mb-5`} />
                     <span className={`${styles.title} mb-4`}>Get early access <br />to our
