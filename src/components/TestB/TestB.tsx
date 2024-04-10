@@ -58,8 +58,15 @@ export const TestB = () => {
                             Sign up to get your one-time invitation and be among the first
                             to join Sync Club, a professional networking club with exclusive member rewards.
                         </p>
+                        <p className='text-start'>Connect with students and alumni from <span> Harvard, MIT, Columbia, NYU</span>, and other leading universities.</p>
                         <div className='mt-5 w-100'>
-                            <JoinWaitlistInput labelBtn="Get your invite" placeholder="Type your email" haveIcon={true} className={`justify-content-${isMobile ? 'center' : 'start'}`} style={{ width: '80%', maxWidth: '80%' }} />
+                            <JoinWaitlistInput 
+                                labelBtn="Get your invite" 
+                                placeholder="Type your email" 
+                                haveIcon={true} 
+                                className={`justify-content-${isMobile ? 'center' : 'start'}`} 
+                                style={{ width: isMobile ? '100%' : '90%', maxWidth: isMobile ? '100%' : '90%'}} 
+                            />
                         </div>
 
                     </div>

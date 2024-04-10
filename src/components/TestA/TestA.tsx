@@ -19,9 +19,9 @@ export const TestA = () => {
                         <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
                             <span>invite-only</span>
                             <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
-                        </div>
-                        app</span>
-                    <div style={{padding:'0 5rem'}}>
+                        </div>app
+                    </span>
+                    <div className={styles.header}>
                         <p className='mt-4'>
                             Join our <span>exclusive club</span> to make meaningful connections with experts in your field, attend tailored meetups, find club workspots & explore preferred places of fellow members, and unlock member perks & rewards.
                         </p>
@@ -31,9 +31,8 @@ export const TestA = () => {
                         </p>
                         <br />
                         <p>
-                            When the app is available, you'll receive a unique link to invite up to
-                            <span> 4 like-minded individuals</span>, fostering our community's growth with top people.
-                            Choose wisely!
+                            Connect with students and alumni from
+                            <span> Harvard, MIT, Columbia, NYU</span>, and other leading universities.
                         </p>
                     </div>
                     <div className='w-100 d-flex justify-content-center'>
