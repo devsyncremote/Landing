@@ -21,9 +21,9 @@ export const TestA = () => {
                             <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
                         </div>app
                     </span>
-                    <div className={styles.header}>
-                        <p className='mt-4'>
-                            Join our <span>exclusive club</span> to make meaningful connections with experts in your field, attend tailored meetups, find club workspots & explore preferred places of fellow members, and unlock member perks & rewards.
+                    <div className="">
+                        <p className='mt-4' style={{textJustify:'auto'}}>
+                            Join our <span>exclusive club</span> to make meaningful connections with experts in your field, attend {isMobile ? '' : <br /> } tailored meetups, find club workspots & explore preferred places of fellow members, and {isMobile ? '' : <br /> } unlock member perks & rewards.
                         </p>
                         <br />
                         <p>
@@ -31,8 +31,8 @@ export const TestA = () => {
                         </p>
                         <br />
                         <p>
-                            Connect with students and alumni from
-                            <span> Harvard, MIT, Columbia, NYU</span>, and other leading universities.
+                            Connect with students and alumni from {isMobile ? <br /> : '' }
+                            <span> Harvard, MIT, Columbia, NYU</span>, <br />and other leading universities.
                         </p>
                     </div>
                     <div className='w-100 d-flex justify-content-center'>
