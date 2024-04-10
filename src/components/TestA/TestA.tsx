@@ -40,7 +40,7 @@ export const TestA = () => {
                     </div>
                 </div>
             </section>
-            <section className="vh-120 vw-100" style={{ background: '#F6F6F6', paddingBottom: '40px' }}>
+            <section className="vw-100" style={{ background: '#F6F6F6', paddingBottom: '40px' }}>
                 <div className={`${styles.bottomSection}`}>
                     <div className={`${styles.header}`}>
                         <h1>What is Sync Club?</h1>
