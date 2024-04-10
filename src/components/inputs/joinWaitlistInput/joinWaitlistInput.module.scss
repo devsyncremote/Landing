@@ -88,7 +88,8 @@
 
         span {
             color: #c5ff96;
-
+            //no wrap
+            white-space: nowrap;
             text-align: center;
             font-family: "Euclid Circular A";
             font-size: 18px;
