@@ -41,11 +41,11 @@ export const JoinWaitlistInput = ({ labelBtn, placeholder, className, style, hav
     useEffect(() => {
         if (data) {
             reset();
-            if (data.status === "success") {
+            if (data.success) {
                 setReferralId(data.referralId);
                 setSuccess(SUCCESS_MESSAGE);
                 handleShow();
-            } else if (data.status === "fail") {
+            } else {
                 setError(DEFAULT_ERROR);
             }
         }
