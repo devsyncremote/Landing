@@ -235,6 +235,11 @@
         align-items: center;
         flex-direction: column;
         padding: 0rem 2vw;
+
+        .logo{
+            display: none;
+        }
+
         .iconBigCard{
             width: 90%;
             height: 90%;
@@ -271,7 +276,7 @@
 
         .footer {
             margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 0rem;
             span {
                 font-size: 12px;
                 line-height: 22px;

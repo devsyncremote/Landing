@@ -1,9 +1,7 @@
 import styles from './TestA.module.scss';
-import { Bell, Bill, Build, CreditCard, Gift, Layer1, Layer2, Layer3, Layer4, Logo, Logo3 } from '../../assets';
+import { Bell, Bill, Build, CreditCard, Gift, Logo, Logo3 } from '../../assets';
 import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import LineSVG from '../customSvg/line/line';
 
 
 export const TestA = () => {

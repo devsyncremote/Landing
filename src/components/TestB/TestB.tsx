@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import styles from './TestB.module.scss';
-import { Contactless, Layer10, Layer5, Layer6, Layer7, Layer8, Layer9, Logo, MobileBanking, MoneyJar, Rewards, Terminal } from '../../assets';
+import { Contactless, Layer10, Layer8, Layer9, Logo, MobileBanking, MoneyJar, Rewards, Terminal } from '../../assets';
 import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
 import LineSVG from '../customSvg/line/line';
 import Accordion from 'react-bootstrap/Accordion';
@@ -16,7 +15,7 @@ export const TestB = () => {
                 <div className={`${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
-                        <span className={`${styles.title} mt-4 mb-4`}>
+                        <span className={`${styles.title} ${isMobile ? '' : 'mt-4'} mb-4`}>
                             pay your bills on time,  <br />
                             <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
                                 <span><i>get rewards</i></span>
@@ -48,7 +47,7 @@ export const TestB = () => {
             <section className="vh-200 vw-100" style={{ background: '#FFF', position: 'relative', zIndex: '2' }}>
                 <div className={`${styles.header} px-4`}>
                     <h1>Why join?</h1>
-                    <p className='text-center mt-3'>Be part of an exclusive community of students and alumni <br />
+                    <p className='text-center mt-3'>Be part of an exclusive community of students and alumni {isMobile ? '' : <br />}
                         from <b>Harvard, MIT, NYU, Columbia,</b> and other leading universities.</p>
 
                 </div>
@@ -60,8 +59,10 @@ export const TestB = () => {
                                     <img src={Contactless} alt="" />
                                 </div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Pay bills on time,<br /> earn rewards</h5>
-                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                    <div>
+                                        <h5 className="card-title">Pay bills on time,<br /> earn rewards</h5>
+                                        <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +72,8 @@ export const TestB = () => {
                                     <img src={Terminal} alt="" />
                                 </div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Pay bills on time, earn rewards</h5>
-                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                    <h5 className="card-title">Never miss a payment</h5>
+                                    <p className="card-text">Receive timely reminders for upcoming payments, ensuring you stay on track.</p>
                                 </div>
                             </div>
                         </div>
@@ -84,8 +85,8 @@ export const TestB = () => {
                                     <img src={MoneyJar} alt="" />
                                 </div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Pay bills on time, earn rewards</h5>
-                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                    <h5 className="card-title">Transparency and savings</h5>
+                                    <p className="card-text">Say goodbye to hidden fees and late penalties, saving you money and stress.</p>
                                 </div>
                             </div>
                         </div>
@@ -95,26 +96,25 @@ export const TestB = () => {
                                     <img src={MobileBanking} alt="" />
                                 </div>
                                 <div className="card-body">
-                                    <h5 className="card-title">Pay bills on time, earn rewards</h5>
-                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                    <h5 className="card-title">Automated rewards</h5>
+                                    <p className="card-text">Earn rewards effortlessly as you stay on top of your bills, with no extra effort required.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className='row w-100'>
                         <div className='col'>
-                            <div className="card mt-4 " style={{ height: 'auto' }}>
+                            <div className={`card mt-4`} style={{ height: 'auto' }}>
                                 <div className="card-body d-flex">
                                     <div className='row w-100'>
                                         <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
                                             <img className={styles.iconBigCard} src={Rewards} alt="" />
                                         </div>
-                                        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                                            <div className='px-4'>
-                                                <h5 className="card-title">Pay bills on time, earn rewards</h5>
+                                        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center" style={isMobile ? { height: '100px' } : {}}>
+                                            <div className={`${isMobile ? 'w-100' : 'px-4 d-flex flex-column justify-content-center align-items-center'}`}>
+                                                <h4 className="card-title">Access exclusive perks</h4>
                                                 <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
                                             </div>
-
                                         </div>
                                     </div>
 
@@ -123,10 +123,12 @@ export const TestB = () => {
                         </div>
                     </div>
                     <div className='w-100 mt-2 mb-5'>
-                        <JoinWaitlistInput labelBtn="Join waitlist" placeholder="Type your email" haveIcon={true} className={`justify-content-${isMobile ? 'center' : 'start'}`} style={{ width: '90%', maxWidth: '90%' }} />
+                        <JoinWaitlistInput labelBtn="Join waitlist" placeholder="Type your email" haveIcon={true} className={`justify-content-center`} style={{ width: '90%', maxWidth: '90%' }} />
                     </div>
-        
-                    <h1 style={{ left: '16px', position: 'relative' }}>FAQ</h1>
+
+                    <div className="d-flex align-items-flex-start w-100">
+                        <h1 className="text-left" style={{ left: '16px', position: 'relative' }}>FAQ</h1>
+                    </div>
                     <Accordion defaultActiveKey="0" alwaysOpen>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>What is Sync Club?</Accordion.Header>
