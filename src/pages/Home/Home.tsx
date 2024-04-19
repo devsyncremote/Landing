@@ -11,7 +11,9 @@ export const Home = () => {
 
     return (
         <div className="container-fluid p-0 m-0">
-            {component}
+            {/* {component} */}
+            {/* <TestB></TestB> */}
+            <TestA></TestA>
         </div>
     );
 };

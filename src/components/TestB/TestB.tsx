@@ -1,44 +1,14 @@
 import { useState } from 'react';
 import styles from './TestB.module.scss';
-import { Layer5, Layer6, Layer7, Logo } from '../../assets';
+import { Contactless, Layer10, Layer5, Layer6, Layer7, Layer8, Layer9, Logo, MobileBanking, MoneyJar, Rewards, Terminal } from '../../assets';
 import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
 import LineSVG from '../customSvg/line/line';
-
-
-const cardsData = [
-    {
-        id: 1,
-        text: "Make meaningful connections with experts in your field of interest",
-    },
-    {
-        id: 2,
-        text: "Find popular workspots & explore preferred places of fellow members",
-    },
-    {
-        id: 3,
-        text: "Enjoy exclusive interviews with top players in the industry",
-    },
-    {
-        id: 4,
-        text: "Access member perks & rewards!",
-    },
-];
-
+import Accordion from 'react-bootstrap/Accordion';
 
 
 export const TestB = () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [activeCard, setActiveCard] = useState<number | null>(null);
 
     const isMobile = window.innerWidth < 768;
-
-    const handleCardClick = (cardId: number) => {
-        setActiveCard(cardId);
-    };
-
-    const handleCardMouseEnter = (cardId: number) => {
-        setActiveCard(cardId);
-    };
 
     return (
         <div>
@@ -47,81 +17,154 @@ export const TestB = () => {
                     <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
                         <span className={`${styles.title} mt-4 mb-4`}>
-                            Get early access to our
+                            pay your bills on time,  <br />
                             <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
-                                <span><i>invite-only</i></span>
+                                <span><i>get rewards</i></span>
                                 <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
                             </div>
-                            app
                         </span>
                         <p className='mt-4 text-start'>
-                            Sign up to get your one-time invitation and be among the first
-                            to join Sync Club, a professional networking club with exclusive member rewards.
+                            Join our free members-only club of students who are getting a head start on boosting their credit score and securing financial stability. Access exclusive member rewards and perks every time you make timely payments.
                         </p>
-                        <p className='text-start'>Connect with students and alumni from <span> Harvard, MIT, Columbia, NYU</span>, and other leading universities.</p>
                         <div className='mt-5 w-100'>
-                            <JoinWaitlistInput 
-                                labelBtn="Get your invite" 
-                                placeholder="Type your email" 
-                                haveIcon={true} 
-                                className={`justify-content-${isMobile ? 'center' : 'start'}`} 
-                                style={{ width: isMobile ? '100%' : '90%', maxWidth: isMobile ? '100%' : '90%'}} 
+                            <JoinWaitlistInput
+                                labelBtn="Join waitlist"
+                                placeholder="Type your email"
+                                haveIcon={true}
+                                className={`justify-content-${isMobile ? 'center' : 'start'}`}
+                                style={{ width: isMobile ? '100%' : '90%', maxWidth: isMobile ? '100%' : '90%' }}
                             />
                         </div>
 
                     </div>
                     <div className={styles.rightSide}>
-                        <img src={Layer5} alt="" className={styles.layer5} />
-                        <img src={Layer6} alt="" className={styles.layer6} />
-                        <img src={Layer7} alt="" className={styles.layer7} />
+                        <img src={Layer8} alt="" className={styles.layer5} />
+                        <img src={Layer9} alt="" className={styles.layer6} />
+                        <img src={Layer10} alt="" className={styles.layer7} />
                     </div>
 
                 </div>
             </section>
-            <section className="vh-200 vw-100" style={{ background: '#F6F6F6', position: 'relative', zIndex: '2' }}>
-                <div className={`${styles.header}`}>
-                    <h1>What is
-                        <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
-                            <span>Sync Club</span>
-                            <LineSVG size='50%' color='black' style={{ position: 'absolute', left: 0, bottom: '0px', width: '100%' }} />
-                        </div>
-                        ?</h1>
+            <section className="vh-200 vw-100" style={{ background: '#FFF', position: 'relative', zIndex: '2' }}>
+                <div className={`${styles.header} px-4`}>
+                    <h1>Why join?</h1>
+                    <p className='text-center mt-3'>Be part of an exclusive community of students and alumni <br />
+                        from <b>Harvard, MIT, NYU, Columbia,</b> and other leading universities.</p>
+
                 </div>
-                <div className={`${styles.bottomSection}`}>
-                    <div className={`${styles.leftSide} ${styles.leftBottom}`}>
-                        <div className={styles.containerCustom}>
-                            <h1 className='text-start'>
-                                An invite-only club for professional networking – with exclusive member rewards.
-                            </h1>
-                            <p className='text-start'>We’re building a community based on the personal recommendations of our first members.
-                                When our app is available, you'll receive a unique link to invite up to <b>4 like-minded individuals</b>,
-                                fostering our community's growth with top-notch connections.</p>
-                            <div className='w-100'>
-                                <JoinWaitlistInput labelBtn="Get your invite" placeholder="Type your email" haveIcon={true} className={`justify-content-${isMobile ? 'center' : 'start'}`} style={{ width: '90%', maxWidth: '90%' }} />
+                <div className={`${styles.bottomSection} mt-4`}>
+                    <div className='row w-100'>
+                        <div className='col-12 col-md-6 mt-4'>
+                            <div className="card">
+                                <div className="card-header">
+                                    <img src={Contactless} alt="" />
+                                </div>
+                                <div className="card-body">
+                                    <h5 className="card-title">Pay bills on time,<br /> earn rewards</h5>
+                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div className={`${styles.rightSide} ${styles.rightBottom}`}>
-                        <div className={styles.cardContainer}>
-                            {cardsData.map((card) => (
-                                <div
-                                    key={card.id}
-                                    className={styles.card}
-                                    onClick={() => handleCardClick(card.id)}
-                                    onMouseEnter={() => handleCardMouseEnter(card.id)}
-                                    onMouseLeave={() => setActiveCard(null)}
-                                    style={{ top: `${card.id * 100}px` }}
-                                >
-                                    <div className={styles.cardContent}>
-                                        <div className={styles.rounded}>
-                                            {card.id}
-                                        </div>
-                                        <span>{card.text}</span>
-                                    </div>
+                        <div className='col-12 col-md-6 mt-4'>
+                            <div className="card">
+                                <div className="card-header">
+                                    <img src={Terminal} alt="" />
                                 </div>
-                            ))}
+                                <div className="card-body">
+                                    <h5 className="card-title">Pay bills on time, earn rewards</h5>
+                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div className='row w-100 mt-4'>
+                        <div className='col-12 col-md-6 mt-4'>
+                            <div className="card">
+                                <div className="card-header">
+                                    <img src={MoneyJar} alt="" />
+                                </div>
+                                <div className="card-body">
+                                    <h5 className="card-title">Pay bills on time, earn rewards</h5>
+                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-12 col-md-6 mt-4'>
+                            <div className="card">
+                                <div className="card-header">
+                                    <img src={MobileBanking} alt="" />
+                                </div>
+                                <div className="card-body">
+                                    <h5 className="card-title">Pay bills on time, earn rewards</h5>
+                                    <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='row w-100'>
+                        <div className='col'>
+                            <div className="card mt-4 " style={{ height: 'auto' }}>
+                                <div className="card-body d-flex">
+                                    <div className='row w-100'>
+                                        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                                            <img className={styles.iconBigCard} src={Rewards} alt="" />
+                                        </div>
+                                        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                                            <div className='px-4'>
+                                                <h5 className="card-title">Pay bills on time, earn rewards</h5>
+                                                <p className="card-text">Simply pay your bills on time and automatically unlock exciting rewards.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='w-100 mt-2 mb-5'>
+                        <JoinWaitlistInput labelBtn="Join waitlist" placeholder="Type your email" haveIcon={true} className={`justify-content-${isMobile ? 'center' : 'start'}`} style={{ width: '90%', maxWidth: '90%' }} />
+                    </div>
+        
+                    <h1 style={{ left: '16px', position: 'relative' }}>FAQ</h1>
+                    <Accordion defaultActiveKey="0" alwaysOpen>
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>What is Sync Club?</Accordion.Header>
+                            <Accordion.Body>
+                                Sync club is a free members-only app that allows you to earn rewards
+                                and discounts for paying your bills on time.
+                                Simply connect your credit card and we will notify you of upcoming
+                                payments to help you stay on track and reward you with points that you
+                                can redeem at carefully curated brands within the app.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <hr />
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>What if I don’t have a credit card?</Accordion.Header>
+                            <Accordion.Body>
+                                No worries! You can join the club and start building your network with other students and alumni from top universities.
+                                If you’re interested in starting to build your credit score, we can help you select a credit card so that you can start earning rewards
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <hr />
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header>What rewards do I get?</Accordion.Header>
+                            <Accordion.Body>
+                                You can use the rewards earned from your timely credit card payments to enjoy discounts and special offers from our carefully selected brands. Plus, every time you redeem your points through us, you'll earn even more points.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <hr />
+                        <Accordion.Item eventKey="3">
+                            <Accordion.Header>How can I build my network with Sync Club?</Accordion.Header>
+                            <Accordion.Body>
+                                Our community consists of students and alumni from top universities who are eager to advance in their financial journeys. Connect with these like-minded individuals based on shared interests visible in their profiles, and chat about topics that interest you.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <hr />
+                    </Accordion>
+                    <div className={styles.footer}>
+                        <span onClick={() => window.open('https://syncremote.co/terms-conditions', '_blank')}>Terms and Conditions</span>
+                        <span onClick={() => window.open('https://syncremote.co/privacy-policy', '_blank')}>Privacy policy & cookies</span>
                     </div>
                 </div>
             </section>

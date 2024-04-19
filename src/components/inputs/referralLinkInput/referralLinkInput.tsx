@@ -22,7 +22,7 @@ export const ReferralLinkInput = ({ referralId }: ReferralLinkInputProps) => {
 
     return (
         <>
-            <div className={`d-flex mt-4 $`}>
+            <div className={`d-flex mt-4 justify-content-center`}>
                 <div className={`${styles.inputContainer}`}>
                     <input
                         type="email"

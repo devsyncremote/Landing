@@ -1,7 +1,7 @@
 .inputContainer {
     display: flex;
-    max-width: 30rem;
-    width: 30rem;
+    max-width: 22.5rem;
+    width: 22.5rem;
     align-items: center;
     gap: 10px;
     border-radius: 100px;
@@ -11,7 +11,7 @@
 
     .input {
         flex-grow: 1;
-        height: 54px;
+        height: 50px;
         border-radius: 100px;
         border: none;
         padding: 0 20px;
@@ -36,7 +36,7 @@
     }
 
     img {
-        right: 15px;
+        right: 8px;
         position: absolute;
         cursor: pointer;
 

@@ -1,6 +1,6 @@
 .modal {
     .topHalf {
-        height: 20%;
+        height: 10%;
         background-color: black;
         border-radius: 20px 20px 0 0;
         flex-grow: 1;
@@ -14,7 +14,7 @@
     .iconSeparator {
         position: absolute;
         z-index: 10;
-        top: 15%;
+        top: 11%;
         left: 40%;
     }
 
@@ -37,26 +37,30 @@
         z-index: 2;
         padding: 0rem 4rem 0rem 4rem;
         text-align: center;
+        
 
         h1 {
-            color: #0c1504;
+            margin-top: 2rem;
+            color: #0C1504;
+
             text-align: center;
             font-family: "Euclid Circular A";
             font-size: 35px;
             font-style: normal;
             font-weight: 600;
-            line-height: 55px; /* 157.143% */
+            line-height: 39px; /* 111.429% */
             letter-spacing: -1.4px;
         }
 
         p {
             color: #0C1504;
             text-align: center;
-            font-size: 12px;
+            font-family: "Euclid Circular A";
+            font-size: 15px;
             font-style: normal;
-            font-weight: 500;
-            line-height: 24px; /* 171.429% */
-            letter-spacing: -0.56px;
+            font-weight: 400;
+            line-height: 19px; /* 126.667% */
+            letter-spacing: -0.6px;
         }
     }
 
@@ -67,7 +71,7 @@
     :global(.modal-content) {
         display: flex;
         flex-direction: column;
-        height: 600px;
+        height: 555px;
         background-color: transparent;
         border: none;
         border-radius: 0;
@@ -89,14 +93,8 @@
 
         :global(.modal-body) {
             background: #fff;
-            h1 {
-                margin-top: 4rem;
-                font-size: 2.5rem;
-            }
-
             p {
-                margin-top: 1rem;
-                font-size: 1rem;
+                margin-top: 4rem;
             }
 
             .socialIcons {
