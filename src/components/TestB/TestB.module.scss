@@ -45,13 +45,14 @@
         p {
             color: #fff;
 
-            text-align: center;
+            -webkit-text-stroke-width: 1;
+            -webkit-text-stroke-color: #000;
             font-family: "Euclid Circular A";
-            font-size: 20px;
+            font-size: 25px;
             font-style: normal;
-            font-weight: 500;
-            line-height: 30px; /* 150% */
-            letter-spacing: -0.8px;
+            font-weight: 400;
+            line-height: 35px; /* 140% */
+            letter-spacing: -1px;
 
             span {
                 color: #c5ff96;
@@ -65,11 +66,13 @@
         }
     }
 
-    .logo {
-        position: absolute;
-        top: 1.5rem;
-        left: 2.5rem;
-    }
+  
+}
+
+.logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 2.5rem;
 }
 
 .header {
@@ -378,7 +381,7 @@ hr {
                     bottom: 4rem;
                 }
 
-                h4{
+                h4 {
                     bottom: 4.5rem;
                 }
 
@@ -408,7 +411,7 @@ hr {
 
     .topSection {
         .logo {
-           left: 2rem;
+            left: 2rem;
         }
         .leftSide {
             flex-basis: 100%;

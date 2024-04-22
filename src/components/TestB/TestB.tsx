@@ -1,5 +1,5 @@
 import styles from './TestB.module.scss';
-import { Contactless, Layer10, Layer8, Layer9, Logo, MobileBanking, MoneyJar, Rewards, Terminal } from '../../assets';
+import { Contactless, Layer10, Layer8, Layer9, Logo, Logo2, MobileBanking, MoneyJar, Rewards, Terminal } from '../../assets';
 import { JoinWaitlistInput } from '../inputs/joinWaitlistInput/joinWaitlistInput';
 import LineSVG from '../customSvg/line/line';
 import Accordion from 'react-bootstrap/Accordion';
@@ -23,7 +23,8 @@ export const TestB = () => {
                             </div>
                         </span>
                         <p className='mt-4 text-start'>
-                            Join our free members-only club of students who are getting a head start on boosting their credit score and securing financial stability. Access exclusive member rewards and perks every time you make timely payments.
+                        Get ahead on boosting your credit score and access exclusive member rewards every time you make timely payments. <br /><br />
+                        Secure your spot and join our free members-only club for young adults taking care of their financial stability.
                         </p>
                         <div className='mt-5 w-100'>
                             <JoinWaitlistInput
@@ -45,6 +46,7 @@ export const TestB = () => {
                 </div>
             </section>
             <section className="vh-200 vw-100" style={{ background: '#FFF', position: 'relative', zIndex: '2' }}>
+            <img src={Logo2} alt="logo" className={`${styles.logo} mt-4`} />
                 <div className={`${styles.header} px-4`}>
                     <h1>Why join?</h1>
                     <p className='text-center mt-3'>Be part of an exclusive community of students and alumni {isMobile ? '' : <br />}
