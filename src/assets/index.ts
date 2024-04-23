@@ -27,11 +27,11 @@ export { default as shareBtn } from './images/shareButton.svg'
 
 
 //cards
-export { default as Contactless } from "./images/cards/contactless-payment.svg";
-export { default as Terminal } from "./images/cards/pos-terminal.svg";
-export { default as MobileBanking } from "./images/cards/mobile-banking.svg";
-export { default as MoneyJar } from "./images/cards/money-jar.svg";
-export { default as Rewards } from "./images/cards/rewards.svg";
+export { default as Contactless } from "./images/cards/contactless-payment.png";
+export { default as Terminal } from "./images/cards/pos-terminal.png";
+export { default as MobileBanking } from "./images/cards/mobile-banking.png";
+export { default as MoneyJar } from "./images/cards/money-jar.png";
+export { default as Rewards } from "./images/cards/rewards.png";
 export { default as Build } from "./images/cards/build.svg";
 export { default as Bill } from "./images/cards/bill.svg";
 export { default as Bell } from "./images/cards/bell.svg";

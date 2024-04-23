@@ -163,11 +163,11 @@
             background: #f9f9f9;
             border-bottom: none;
             height: 30%;
-
             img {
                 position: absolute;
                 top: 1rem;
                 left: 1rem;
+                width: 5rem;
             }
         }
         :global(.card-body.d-flex) {
@@ -320,6 +320,10 @@ hr {
     width: 100%;
 }
 
+.iconBigCard {
+    width: 25rem;
+}
+
 @media (max-width: 768px) {
     .topSection,
     .bottomSection {
@@ -339,8 +343,7 @@ hr {
         }
 
         .iconBigCard {
-            width: 18rem;
-            height: 10rem;
+            width: 20rem;
         }
 
         .BigCard {
@@ -364,8 +367,9 @@ hr {
             :global(.card-header) {
                 height: 30%;
                 img {
-                    top: 0.5rem;
-                    left: 0.5rem;
+                    top: 1rem;
+                    left: 1rem;
+                    width: 4rem;
                 }
             }
 

@@ -46,7 +46,7 @@ export const TestB = () => {
                 </div>
             </section>
             <section className="vh-200 vw-100" style={{ background: '#FFF', position: 'relative', zIndex: '2' }}>
-            <img src={Logo2} alt="logo" className={`${styles.logo} mt-4`} />
+            { isMobile ? null : <img src={Logo2} alt="logo" className={`${styles.logo} mt-4`} />}
                 <div className={`${styles.header} px-4`}>
                     <h1>Why join?</h1>
                     <p className='text-center mt-3'>Be part of an exclusive community of students and alumni {isMobile ? '' : <br />}
@@ -58,7 +58,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={Contactless} alt="" />
+                                    <img src={Contactless} style={isMobile ? { top:'.5rem' } : {}} alt="" />
                                 </div>
                                 <div className="card-body">
                                     <div>
