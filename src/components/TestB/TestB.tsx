@@ -13,18 +13,20 @@ export const TestB = () => {
         <div>
             <section className="vh-100 vw-100" style={{ background: '#0C1504', position: 'relative', zIndex: '1' }}>
                 <div className={`${styles.topSection}`}>
-                <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
+                    <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
-                        <span className={`${styles.title} ${isMobile ? 'text-start' : 'mt-4'} mb-4`}>
-                            pay your bills on time,  <br />
-                            <div style={{ display: 'inline-block', position: 'relative'}}>
-                                <span><i>get rewards</i></span>
-                                <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
-                            </div>
-                        </span>
+                        <div className="w-100">
+                            <span className={styles.title}>
+                                pay your bills on time,  <br />
+                                <div style={{ display: 'inline-block', position: 'relative' }}>
+                                    <span><i>get rewards</i></span>
+                                    <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
+                                </div>
+                            </span>
+                        </div>
                         <p className='mt-4 text-start'>
-                        Get ahead on boosting your credit score and access exclusive member rewards every time you make timely payments. <br /><br />
-                        Secure your spot and join our free members-only club for young adults taking care of their financial stability.
+                            Get ahead on boosting your credit score and access exclusive member rewards every time you make timely payments. <br /><br />
+                            Secure your spot and join our free members-only club for young adults taking care of their financial stability.
                         </p>
                         <div className='mt-5 w-100'>
                             <JoinWaitlistInput
@@ -46,7 +48,7 @@ export const TestB = () => {
                 </div>
             </section>
             <section className="vh-200 vw-100" style={{ background: '#FFF', position: 'relative', zIndex: '2' }}>
-            { isMobile ? null : <img src={Logo2} alt="logo" className={`${styles.logo} mt-4`} />}
+                {isMobile ? null : <img src={Logo2} alt="logo" className={`${styles.logo} mt-4`} />}
                 <div className={`${styles.header} px-4`}>
                     <h1>Why join?</h1>
                     <p className='text-center mt-3'>Be part of an exclusive community of students and alumni {isMobile ? '' : <br />}
@@ -58,7 +60,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={Contactless} style={isMobile ? { top:'.5rem' } : {}} alt="" />
+                                    <img src={Contactless} style={isMobile ? { top: '.5rem' } : {}} alt="" />
                                 </div>
                                 <div className="card-body">
                                     <div>
