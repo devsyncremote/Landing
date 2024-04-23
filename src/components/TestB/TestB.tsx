@@ -15,9 +15,9 @@ export const TestB = () => {
                 <div className={`${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
-                        <span className={`${styles.title} ${isMobile ? '' : 'mt-4'} mb-4`}>
+                        <span className={`${styles.title} ${isMobile ? 'text-start' : 'mt-4'} mb-4`}>
                             pay your bills on time,  <br />
-                            <div style={{ display: 'inline-block', position: 'relative', padding: '0 10px' }}>
+                            <div style={{ display: 'inline-block', position: 'relative'}}>
                                 <span><i>get rewards</i></span>
                                 <LineSVG size='50%' style={{ position: 'absolute', left: 0, bottom: '0px', width: '95%' }} />
                             </div>
