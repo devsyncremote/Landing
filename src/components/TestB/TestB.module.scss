@@ -28,7 +28,6 @@
 
         .title {
             color: #c5ff96;
-            text-align: center;
             text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
             font-family: "Euclid Circular A";
             font-size: 65px;
@@ -37,6 +36,8 @@
             line-height: 90px; /* 100% */
             letter-spacing: -3.6px;
             text-align: left;
+            position: relative;
+            left: -1rem;
             span {
                 color: #fff;
             }
@@ -65,6 +66,8 @@
             }
         }
     }
+
+  
 }
 
 .logo {
@@ -338,8 +341,6 @@ hr {
             font-weight: 600;
             line-height: 45px; /* 128.571% */
             letter-spacing: -1.4px;
-            left: -1.5rem;
-            position: relative;
         }
 
         .iconBigCard {
@@ -415,7 +416,9 @@ hr {
 
     .topSection {
         .logo {
-            left: 2rem;
+            left: -5.5rem;
+            top : 2rem;
+            position: relative;
         }
         .leftSide {
             flex-basis: 100%;

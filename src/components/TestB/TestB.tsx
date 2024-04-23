@@ -13,7 +13,7 @@ export const TestB = () => {
         <div>
             <section className="vh-100 vw-100" style={{ background: '#0C1504', position: 'relative', zIndex: '1' }}>
                 <div className={`${styles.topSection}`}>
-                    <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
+                <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
                         <span className={`${styles.title} ${isMobile ? 'text-start' : 'mt-4'} mb-4`}>
                             pay your bills on time,  <br />
