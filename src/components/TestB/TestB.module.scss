@@ -323,6 +323,17 @@ hr {
 }
 
 @media (max-width: 768px) {
+    .topSection{
+        .containerTitle{
+            margin-bottom: 2rem;
+            margin-top: -4rem;
+        }
+        p{
+            font-size: 18px !important;
+            line-height: 24px !important;
+        }
+    }
+
     .topSection,
     .bottomSection {
         display: flex;

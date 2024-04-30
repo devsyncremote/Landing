@@ -15,7 +15,7 @@ export const TestB = () => {
                 <div className={`${styles.topSection}`}>
                     <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
-                        <div className="w-100">
+                        <div className={`w-100 ${styles.containerTitle}`}>
                             <span className={styles.title}>
                                 pay your bills on time,  <br />
                                 <div style={{ display: 'inline-block', position: 'relative' }}>
