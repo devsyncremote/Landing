@@ -20,12 +20,12 @@ export const Home = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Sync Club | Get early access" />
                 <meta property="og:description" content="Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits." />
-                <meta property="og:image" content="https://sync.club/assets/og-image.png" />
+                <meta property="og:image" content="https://sync.club/icons/icon-512x512.png" />
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:title" content="Sync Club | Get early access" />
                 <meta property="twitter:description" content="Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits." />
-                <meta property="twitter:image" content="https://sync.club/assets/twitter-og-image.png" />
+                <meta property="twitter:image" content="https://sync.club/icons/icon-512x512.png" />
             </Helmet>
             {/* {component} */}
             <TestB></TestB>
