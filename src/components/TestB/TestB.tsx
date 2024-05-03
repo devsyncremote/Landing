@@ -13,7 +13,7 @@ export const TestB = () => {
         <div>
             <section className="vh-100 vw-100" style={{ background: '#0C1504', position: 'relative', zIndex: '1' }}>
                 <div className={`${styles.topSection}`}>
-                    <img src={Logo} alt="logo" className={`${styles.logo} mt-4`} />
+                    <img src={Logo} alt="logo" title='logo' className={`${styles.logo} mt-4`} />
                     <div className={`${styles.leftSide} ${styles.leftTop}`}>
                         <div className={`w-100 ${styles.containerTitle}`}>
                             <span className={styles.title}>
@@ -40,15 +40,15 @@ export const TestB = () => {
 
                     </div>
                     <div className={styles.rightSide}>
-                        <img src={Layer8} alt="" className={styles.layer5} />
-                        <img src={Layer9} alt="" className={styles.layer6} />
-                        <img src={Layer10} alt="" className={styles.layer7} />
+                        <img src={Layer8} alt="Layer 8 description" title="Layer 8" className={styles.layer5} />
+                        <img src={Layer9} alt="Layer 9 description" title="Layer 9" className={styles.layer6} />
+                        <img src={Layer10} alt="Layer 10 description" title="Layer 10" className={styles.layer7} />
                     </div>
 
                 </div>
             </section>
             <section className="vh-200 vw-100" style={{ background: '#FFF', position: 'relative', zIndex: '2' }}>
-                {isMobile ? null : <img src={Logo2} alt="logo" className={`${styles.logo} mt-4`} />}
+                {isMobile ? null : <img src={Logo2} alt="logo" title='logo' className={`${styles.logo} mt-4`} />}
                 <div className={`${styles.header} px-4`}>
                     <h1>Why join?</h1>
                     <p className='text-center mt-3'>Be part of an exclusive community of students and alumni {isMobile ? '' : <br />}
@@ -60,7 +60,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={Contactless} style={isMobile ? { top: '.5rem' } : {}} alt="" />
+                                    <img src={Contactless} style={isMobile ? { top: '.5rem' } : {}} alt="contactless" title="contactless" />
                                 </div>
                                 <div className="card-body">
                                     <div>
@@ -73,7 +73,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={Terminal} alt="" />
+                                    <img src={Terminal} alt="terminal" title="terminal" />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Never miss a payment</h5>
@@ -86,7 +86,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={MoneyJar} alt="" />
+                                    <img src={MoneyJar} alt="money jar" title="money jar" />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Transparency and savings</h5>
@@ -97,7 +97,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={MobileBanking} alt="" />
+                                    <img src={MobileBanking} alt="mobile banking" title="mobile banking" />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Automated rewards</h5>
@@ -112,7 +112,7 @@ export const TestB = () => {
                                 <div className="card-body d-flex">
                                     <div className='row w-100'>
                                         <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                                            <img className={styles.iconBigCard} src={Rewards} alt="" />
+                                            <img className={styles.iconBigCard} src={Rewards} alt="rewards" title="rewards" />
                                         </div>
                                         <div className="col-12 col-md-6 d-flex justify-content-center align-items-center" style={isMobile ? { height: '100px' } : {}}>
                                             <div className={`${isMobile ? 'w-100' : 'px-4 d-flex flex-column justify-content-center align-items-center'}`}>
@@ -131,7 +131,7 @@ export const TestB = () => {
                     </div>
 
                     <div className="d-flex align-items-flex-start w-100">
-                        <h1 className="text-left" style={{ left: '16px', position: 'relative' }}>FAQ</h1>
+                        <h2 className="text-left" style={{ left: '16px', position: 'relative' }}>FAQ</h2>
                     </div>
                     <Accordion defaultActiveKey="0" alwaysOpen>
                         <Accordion.Item eventKey="0">

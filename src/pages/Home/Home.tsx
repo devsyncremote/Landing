@@ -16,6 +16,7 @@ export const Home = () => {
                 <title>Sync Club | Get early access</title>
                 <meta name="description" content="Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="canonical" href="https://sync.club" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Sync Club | Get early access" />
                 <meta property="og:description" content="Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits." />
