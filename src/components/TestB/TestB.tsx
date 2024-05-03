@@ -39,11 +39,11 @@ export const TestB = () => {
                         </div>
 
                     </div>
-                    <div className={styles.rightSide}>
-                        <img src={Layer8} alt="Layer 8 description" title="Layer 8" className={styles.layer5} />
-                        <img src={Layer9} alt="Layer 9 description" title="Layer 9" className={styles.layer6} />
-                        <img src={Layer10} alt="Layer 10 description" title="Layer 10" className={styles.layer7} />
-                    </div>
+                    { !isMobile && <div className={styles.rightSide}>
+                        <img src={Layer8} loading='lazy' alt="Layer 8 description" title="Layer 8" className={styles.layer5} />
+                        <img src={Layer9} loading='lazy' alt="Layer 9 description" title="Layer 9" className={styles.layer6} />
+                        <img src={Layer10} loading='lazy' alt="Layer 10 description" title="Layer 10" className={styles.layer7} />
+                    </div>}
 
                 </div>
             </section>
@@ -60,7 +60,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={Contactless} style={isMobile ? { top: '.5rem' } : {}} alt="contactless" title="contactless" />
+                                    <img src={Contactless} loading='lazy' style={isMobile ? { top: '.5rem' } : {}} alt="contactless" title="contactless" />
                                 </div>
                                 <div className="card-body">
                                     <div>
@@ -73,7 +73,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={Terminal} alt="terminal" title="terminal" />
+                                    <img src={Terminal} loading='lazy' alt="terminal" title="terminal" />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Never miss a payment</h5>
@@ -86,7 +86,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={MoneyJar} alt="money jar" title="money jar" />
+                                    <img src={MoneyJar} loading='lazy' alt="money jar" title="money jar" />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Transparency and savings</h5>
@@ -97,7 +97,7 @@ export const TestB = () => {
                         <div className='col-12 col-md-6 mt-4'>
                             <div className="card">
                                 <div className="card-header">
-                                    <img src={MobileBanking} alt="mobile banking" title="mobile banking" />
+                                    <img src={MobileBanking} loading='lazy' alt="mobile banking" title="mobile banking" />
                                 </div>
                                 <div className="card-body">
                                     <h5 className="card-title">Automated rewards</h5>
@@ -112,7 +112,7 @@ export const TestB = () => {
                                 <div className="card-body d-flex">
                                     <div className='row w-100'>
                                         <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                                            <img className={styles.iconBigCard} src={Rewards} alt="rewards" title="rewards" />
+                                            <img className={styles.iconBigCard} loading='lazy' src={Rewards} alt="rewards" title="rewards" />
                                         </div>
                                         <div className="col-12 col-md-6 d-flex justify-content-center align-items-center" style={isMobile ? { height: '100px' } : {}}>
                                             <div className={`${isMobile ? 'w-100' : 'px-4 d-flex flex-column justify-content-center align-items-center'}`}>

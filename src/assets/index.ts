@@ -6,11 +6,11 @@ export { default as Layer2 } from "./images/layer2.png";
 export { default as Layer3 } from "./images/layer3.png";
 export { default as Layer4 } from "./images/layer4.png";
 export { default as Layer5 } from "./images/layer5.png";
-export { default as Layer6 } from "./images/layer6.png";
-export { default as Layer7 } from "./images/layer7.png";
-export { default as Layer8 } from "./images/layer8.png";
-export { default as Layer9 } from "./images/layer9.png";
-export { default as Layer10 } from "./images/layer10.png";
+export { default as Layer6 } from "./images/webp/layer6.webp";
+export { default as Layer7 } from "./images/webp/layer7.webp";
+export { default as Layer8 } from "./images/webp/layer8.webp";
+export { default as Layer9 } from "./images/webp/layer9.webp";
+export { default as Layer10 } from "./images/webp/layer10.webp";
 
 //socials icons
 export { default as Facebook } from "./images/social/facebook.svg";
@@ -31,7 +31,7 @@ export { default as Contactless } from "./images/cards/contactless-payment.png";
 export { default as Terminal } from "./images/cards/pos-terminal.png";
 export { default as MobileBanking } from "./images/cards/mobile-banking.png";
 export { default as MoneyJar } from "./images/cards/money-jar.png";
-export { default as Rewards } from "./images/cards/rewards.png";
+export { default as Rewards } from "./images/cards/webp/rewards.webp";
 export { default as Build } from "./images/cards/build.svg";
 export { default as Bill } from "./images/cards/bill.svg";
 export { default as Bell } from "./images/cards/bell.svg";

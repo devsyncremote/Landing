@@ -34,7 +34,8 @@
     "dev": "react-scripts start",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build:images": "node utils/convert-images.js"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +59,8 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/js-cookie": "^3.0.6",
     "husky": "^9.0.11",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
     "prettier": "^3.2.5"
   }
 }
