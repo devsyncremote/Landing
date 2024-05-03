@@ -25,6 +25,7 @@ export const Home = () => {
                 <meta property="twitter:title" content="Sync Club | Get early access" />
                 <meta property="twitter:description" content="Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits." />
                 <meta property="twitter:image" content="%PUBLIC_URL%/icons/icon-512x512.png" />
+                <meta name="google-site-verification" content="Qc0ntsqD8H3sHi0SNJB7X0Vr5QizvmtRtxR7n39G9Mw" />
             </Helmet>
             <TestB></TestB>
             {/* <TestA></TestA> */}
