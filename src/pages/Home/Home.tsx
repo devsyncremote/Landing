@@ -12,7 +12,7 @@ export const Home = () => {
 
     return (
         <div className="container-fluid p-0 m-0">
-            <Helmet prioritizeSeoTags={true}>
+            <Helmet prioritizeSeoTags={true} defer={true}>
                 <title>Sync Club | Get early access</title>
                 <meta name="description" content="Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

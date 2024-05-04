@@ -28,9 +28,9 @@ export { default as shareBtn } from './images/shareButton.svg'
 
 //cards
 export { default as Contactless } from "./images/cards/contactless-payment.png";
-export { default as Terminal } from "./images/cards/pos-terminal.png";
-export { default as MobileBanking } from "./images/cards/mobile-banking.png";
-export { default as MoneyJar } from "./images/cards/money-jar.png";
+export { default as Terminal } from "./images/cards/webp/pos-terminal.webp";
+export { default as MobileBanking } from "./images/cards/webp/mobile-banking.webp";
+export { default as MoneyJar } from "./images/cards/webp/money-jar.webp";
 export { default as Rewards } from "./images/cards/webp/rewards.webp";
 export { default as Build } from "./images/cards/build.svg";
 export { default as Bill } from "./images/cards/bill.svg";
