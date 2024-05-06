@@ -59,7 +59,7 @@ export const PrivacyCookie = () => {
             <p>
                 For any inquiries or assistance that we may be able to provide, please contact us via mail at the following address: 17 Allston Street #2, Allston, MA 02134, USA.
                 <br /> <br />
-                For supplementary information on users from California, Nevada, Virginia, Colorado, and Connecticut please check the following Privacy Notice.
+                For supplementary information on users from California, Nevada, Virginia, Colorado, and Connecticut please check the following <a href="/terms/privacy-notice">Privacy Notice</a>.
             </p>
         </div>
     )

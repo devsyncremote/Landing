@@ -170,7 +170,7 @@ export const TestB = () => {
                     </Accordion>
                     <div className={styles.footer}>
                         <span onClick={() => window.open('/terms/terms-and-conditions', '_blank')}>Terms and Conditions</span>
-                        <span>Privacy <a style={{color:'#878787'}} href="/terms/privacy-notice">policy</a> & <a style={{color:'#878787'}} href="/terms/privacy-cookie">cookies</a></span>
+                        <span onClick={() => window.open('/terms/privacy-cookie', '_blank')}>Privacy policy & cookies</span>
                     </div>
                 </div>
             </section>
