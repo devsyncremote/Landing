@@ -169,8 +169,8 @@ export const TestB = () => {
                         <hr />
                     </Accordion>
                     <div className={styles.footer}>
-                        <span onClick={() => window.open('https://syncremote.co/terms-conditions', '_blank')}>Terms and Conditions</span>
-                        <span onClick={() => window.open('https://syncremote.co/privacy-policy', '_blank')}>Privacy policy & cookies</span>
+                        <span onClick={() => window.open('/terms/terms-and-conditions', '_blank')}>Terms and Conditions</span>
+                        <span>Privacy <a style={{color:'#878787'}} href="/terms/privacy-notice">policy</a> & <a style={{color:'#878787'}} href="/terms/privacy-cookie">cookies</a></span>
                     </div>
                 </div>
             </section>

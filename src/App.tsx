@@ -7,6 +7,7 @@ import { Home } from './pages/Home/Home';
 import Invite from './pages/Invite/Invite';
 import { HelmetProvider } from 'react-helmet-async';
 import NotFound from './components/NotFound/NotFound';
+import { Terms } from './pages/Terms/Terms';
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/invite/:id" element={<Invite />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/terms/:type"  element={<Terms/>} />
         </Routes>
       </QueryClientProvider>
     </HelmetProvider>
