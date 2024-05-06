@@ -10,7 +10,7 @@ export const TestB = () => {
     const isMobile = window.innerWidth < 768;
 
     return (
-        <div>
+        <>
             <section className="vh-100 vw-100" style={{ background: '#0C1504', position: 'relative', zIndex: '1' }}>
                 <div className={`${styles.topSection}`}>
                     <img src={Logo} alt="logo" title='logo' className={`${styles.logo} mt-4`} />
@@ -39,10 +39,10 @@ export const TestB = () => {
                         </div>
 
                     </div>
-                    { !isMobile && <div className={styles.rightSide}>
-                        <img src={Layer8} loading='lazy' alt="Layer 8 description" title="Layer 8" className={styles.layer5} />
-                        <img src={Layer9} loading='lazy' alt="Layer 9 description" title="Layer 9" className={styles.layer6} />
-                        <img src={Layer10} loading='lazy' alt="Layer 10 description" title="Layer 10" className={styles.layer7} />
+                    {!isMobile && <div className={styles.rightSide}>
+                        <img src={Layer8} alt="Layer 8 description" title="Layer 8" className={styles.layer5} />
+                        <img src={Layer9} alt="Layer 9 description" title="Layer 9" className={styles.layer6} />
+                        <img src={Layer10} alt="Layer 10 description" title="Layer 10" className={styles.layer7} />
                     </div>}
 
                 </div>
@@ -174,6 +174,6 @@ export const TestB = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 }

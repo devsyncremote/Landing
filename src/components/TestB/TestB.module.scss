@@ -30,6 +30,7 @@
             color: #c5ff96;
             text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 65px;
             font-style: normal;
             font-weight: 600;
@@ -47,6 +48,7 @@
             -webkit-text-stroke-width: 1;
             -webkit-text-stroke-color: #000;
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 25px;
             font-style: normal;
             font-weight: 400;
@@ -56,6 +58,7 @@
             span {
                 color: #c5ff96;
                 font-family: "Euclid Circular A";
+                font-display: swap;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 600;
@@ -84,6 +87,7 @@
 
         text-align: center;
         font-family: "Euclid Circular A";
+        font-display: swap;
         font-size: 45px;
         font-style: normal;
         font-weight: 600;
@@ -96,6 +100,7 @@
 
         text-align: center;
         font-family: "Euclid Circular A";
+        font-display: swap;
         font-size: 25px;
         font-style: normal;
         font-weight: 500;
@@ -119,6 +124,7 @@
         color: #0c1504;
 
         font-family: "Euclid Circular A";
+        font-display: swap;
         font-size: 70px;
         font-style: normal;
         font-weight: 600;
@@ -137,6 +143,7 @@
             color: #0c1504;
 
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 35px;
             font-style: normal;
             font-weight: 600;
@@ -148,6 +155,7 @@
             color: var(--Grey---Full, #878787);
 
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 20px;
             font-style: normal;
             font-weight: 500;
@@ -216,6 +224,7 @@
 
         button {
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 25px;
             font-style: normal;
             font-weight: 600;
@@ -239,6 +248,7 @@
         color: black;
         color: var(--Grey---Full, #878787);
         font-family: "Euclid Circular A";
+        font-display: swap;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -256,6 +266,7 @@
         span {
             color: var(--Grey---Full, #878787);
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
@@ -308,9 +319,6 @@
         bottom: 0rem;
         z-index: 10;
     }
-
-    @media (min-width: 1440px) {
-    }
 }
 
 hr {
@@ -343,6 +351,7 @@ hr {
 
         .title {
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 35px;
             font-style: normal;
             font-weight: 600;
@@ -450,6 +459,7 @@ hr {
 
             text-align: center;
             font-family: "Euclid Circular A";
+            font-display: swap;
             font-size: 35px;
             font-style: normal;
             font-weight: 600;
