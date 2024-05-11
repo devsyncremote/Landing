@@ -2,7 +2,7 @@ import styles from './Terms.module.scss';
 
 export const PrivacyNotice = () => {
     return (
-        <div className="container-fluid p-4" style={{
+        <div className={`container-fluid p-4 ${styles.termsContainer}`} style={{
             margin: '0 auto',
             width: '65%',
             display: 'flex',

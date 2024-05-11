@@ -26,5 +26,7 @@
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#0C1504",
-  "background_color": "#FFFFFF"
+  "background_color": "#FFFFFF",
+  "description": "Join the members-only app that rewards you for paying your bills on time. Track your credit score and build good credit habits.",
+  "lang": "en"
 }
